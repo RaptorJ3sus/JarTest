@@ -8,9 +8,20 @@ const initialState = {
 const rawWaterSlice = createSlice({
   name: "rawWater",
   initialState,
-  reducers: {},
+  reducers: {
+    userInputRawWater: (state, action) => {
+      state.rawWater = state.rawWater.map((rawWaterInfo) => {
+        return {
+          ...rawWaterInfo,
+          rawWaterTurbidityNTU: action.payload.rawWaterTurbidityNTU,
+          rawWaterTOCPpm: action.payload.rawWaterTOCPpm,
+        };
+      });
+    },
+  },
 });
 
 export default rawWaterSlice.reducer;
+export const { userInputRawWater } = rawWaterSlice.actions;
 
 //dont forget to export the actions when they are included

@@ -5,6 +5,7 @@ import tankReducer from "../features/tanks/tankSlice";
 import consumerReducer from "../features/consumers/ConsumerSlice";
 import distributorReducer from "../features/Distributor/distributorSlice";
 import rawWaterReducer from "../features/RawWater/rawWaterSlice";
+import dosageReducer from "../features/Dosage/dosageSlice";
 
 const store = configureStore({
   reducer: {
@@ -13,6 +14,7 @@ const store = configureStore({
     consumer: consumerReducer,
     distributor: distributorReducer,
     rawWater: rawWaterReducer,
+    dosage: dosageReducer,
   },
 });
 

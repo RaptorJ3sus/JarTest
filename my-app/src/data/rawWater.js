@@ -1,8 +1,8 @@
 const rawWater = [
   {
     rawWaterId: 1,
-    rawWaterTurbidityNTU: 18,
-    rawWaterTOCPpm: 4,
+    rawWaterTurbidityNTU: 0,
+    rawWaterTOCPpm: 0,
   },
 ];
 
